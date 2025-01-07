@@ -1,0 +1,579 @@
+/* General Styles */
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff; /* Light creamy background */
+    color: #333; /* Standard text color */
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fullscreen loader */
+.loader {
+    position: fixed; /* Full-screen overlay */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('C:/Users/91981/Desktop/sayaji-website/static/images/header-background.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack content vertically */
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5); /* Add a soft shadow */
+    z-index: 1000; /* Ensure it's above all other elements */
+    overflow: hidden; /* Prevents scrolling while loader is active */
+}
+
+.loader h1 {
+    font-family: 'Waterfall', static; /* Replace with your chosen font */
+    font-size: 8rem; /* Adjust size as needed */
+    color: #003366; /* Text color */
+    animation: fadeInOut 2s ease-in-out;
+}
+
+/* Arrow styling */
+.arrow-down {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    width: 40px;
+    height: 40px;
+    border-left: 4px solid #003366;
+    border-bottom: 4px solid #003366;
+    transform: rotate(-45deg);
+    animation: bounce 2s infinite; /* Add a bouncing animation */
+}
+
+/* Arrow bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0) rotate(-45deg);
+    }
+    50% {
+        transform: translateY(10px) rotate(-45deg);
+    }
+}
+
+/* Fade-in and fade-out effect for initials */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.5); /* Start smaller */
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1); /* Slight zoom effect */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Settle to normal size */
+    }
+}
+
+/* Hide the loader after animation */
+.loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: auto; /* Ensures scrolling is enabled */
+}
+
+header {
+    position: relative;
+    height: 470px;
+    background: url('C:/Users/91981/Desktop/sayaji-website/static/images/header-background.jpeg') no-repeat center center;
+    background-size: cover;
+    color: #003366; /* Darker text for contrast */
+    text-align: center;
+    padding: 50px 20px;
+    overflow: hidden;
+}
+
+header h1 {
+    font-family: 'Waterfall', cursive; /* Stylish font for the header */
+    font-size: 8rem; /* Adjusts the size of the main heading */
+    margin: 0; /* Removes extra margin */
+    font-weight: normal; /* Ensures the text is not bold */
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 10px 0 0;
+    font-family: 'Merriweather', serif;
+    animation: fadeInSubtitle 4s ease-in-out;/* Links the fade-in animation */
+}
+
+@keyframes fadeInSubtitle {
+    0% {
+        opacity: 0;/* The text starts fully transparent */
+        transform: translateY(40px);/* The text starts 40px lower */
+    }
+    100% {
+        opacity: 1;/* The text becomes fully opaque */
+        transform: translateY(0);/* The text returns to its original position */
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background: #0d2b58; /* Slightly deeper blue for the nav */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #ffffff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Recent Innovations Section */
+#publications .heading-container {
+    display: inline-flex; /* Align heading and GIF horizontally */
+    justify-content: center; /* Center the block */
+    align-items: center; /* Vertically align the heading and GIF */
+    gap: 10px; /* Add spacing between heading and GIF */
+    width: 100%; /* Take full width of the section */
+    text-align: center; /* Ensure alignment is centered */
+}
+
+/* GIF styling */
+.innovation-gif {
+    width: 80px; /* Adjust the width of the GIF */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#publications h2 {
+    color: #023261; /* A deeper pastel blue for the heading */
+    font-family: 'Castoro Titling', static; /* Elegant serif font for the heading */
+    font-size: 2rem;
+    margin: 0;
+}
+
+#publications ul {
+    list-style-type: disc; /* Adds a bullet point before each link */
+    padding-left: 30px; /* Indents the list slightly */
+}
+
+#publications ul li {
+    margin-bottom: 10px; /* Adds space between each item */
+}
+
+#publications ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #244c69; /* Bold pastel blue color for links */
+    font-style: italic; /* Italic font for emphasis */
+    font-family: 'Merriweather', serif; /* Clear, readable font for links */
+    font-size: 1rem;
+}
+
+#publications ul li a:hover {
+    color: #73a3d3; /* Slightly brighter blue on hover */
+    text-decoration: underline; /* Adds underline on hover for interactivity */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0d2b58; /* Light pastel blue for footer */
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+#about {
+    background-color: #ffffff;  /* Soft pastel blue background */
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+#about h2 {
+    color: #023261;  /* Blue heading */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Castoro Titling', static; /* Elegant serif font */
+    text-align: left;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;  /* Align text and image vertically */
+    justify-content: space-between; /* Space between the text and image */
+}
+
+.about-text {
+    flex: 2;  /* Allow the text to take the remaining space */
+    margin-right: 20px; /* Add some space between text and image */
+}
+
+.about-photo {
+    flex-shrink: 0;
+    width: 300px; /* Set the image width */
+    height: auto;
+}
+
+.about-photo img {
+    width: 100%;  /* Make the image fit within its container */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #000000;
+    font-family: 'Merriweather', serif;
+}
+
+button, .btn {
+    background-color: #0078d7;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.1); /* Slightly enlarges the button */
+    background-color: #005bb5; /* Darkens the button */
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#experience {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#experience h2 {
+    color: #023261;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Castoro Titling', static;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Stacks on small screens */
+    gap: 20px;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+}
+
+.experience-box {
+    background: #ffffff;
+    border: 2px solid #003366;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    justify-content: start; /* Align content to the top */
+}
+
+/* Ensures all logos are in a uniform container */
+.logo-container {
+    height: 80px; /* Adjust based on your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Space between logo and company name */
+    overflow: hidden; /* Prevent logos from exceeding container boundaries */
+}
+
+/* Styles for the logo */
+.company-logo {
+    max-height: 100%; /* Scale logo to fit within container */
+    max-width: 100%; /* Prevents distortion */
+    object-fit: contain; /* Maintains aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        height: 50px; /* Smaller height for smaller screens */
+    }
+}
+
+.company-name {
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem; /* Adjust size for the company name */
+    font-weight: bold; /* Make the name stand out */
+}
+
+.location {
+    margin: 0; /* Remove extra margin */
+    padding: 0; /* Remove extra padding */
+    font-size: 1rem; /* Optional: Set a slightly smaller font */
+    color: #666; /* Optional: Subtle color for location */
+}
+
+.designation {
+    margin-top: 10px; /* Adds space between location and designation */
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.time-period {
+    margin-top: 5px; /* Adds space between designation and time period */
+    font-size: 0.9rem; /* Adjust size as needed */
+    color: #666; /* Optional: Make it visually distinct */
+}
+
+
+.experience-box .company-name {
+    font-size: 1.2rem; /* Company name size */
+    font-weight: bold;
+    margin: 0; /* Space around */
+}
+
+.experience-box .location {
+    font-size: 1rem; /* Location size */
+    color: #666; /* Subtle color for location */
+    margin: 5px 0 10px 0; /* Space around */
+}
+
+.experience-box .designation {
+    font-size: 1rem; /* Adjust as needed */
+    font-weight: bold;
+    margin: 0; /* Add spacing if needed */
+    background-color: #f0f8ff;
+}
+
+.experience-box .time-period {
+    font-size: 0.9rem; /* Slightly smaller font */
+    color: #666; /* Subtle text color for time */
+    margin: 0; /* Add spacing if needed */
+}
+
+.experience-box:hover {
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    overflow: auto; /* Scroll if needed */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+.modal-details {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.6;
+    text-align: left;
+}
+
+#contact h2 {
+    text-align: center;
+    color: #023261;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Castoro Titling', static; /* Adjust font if necessary */
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Change to flexbox for horizontal layout */
+    justify-content: center; /* Center align the items */
+    gap: 40px; /* Add spacing between items */
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.contact-gif {
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%; /* Optional: Add rounded corners */
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+/* Hover Effects */
+.contact-gif:hover {
+    transform: scale(1.2); /* Slightly enlarge GIF on hover */
+}
+.contact-list a:hover {
+    text-decoration: underline;
+    color: #003366;
+}
+
+.heading-container {
+    display: inline-flex; /* Align items horizontally */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Vertically align items */
+    gap: 10px; /* Add space between the GIF and the heading */
+    width: 100%; /* Take full width of the section */
+    text-align: center; /* Center-align the text inside the container */
+}
+
+.education-gif {
+    width: 80px; /* Adjust size of the GIF */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#education h2 {
+    color: #023261;
+    font-size: 2rem;
+    margin: 0; /* Center the heading */
+    font-family: 'Castoro Titling', static; /* Elegant serif font */
+}
+
+.education-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center-align the items */
+    gap: 50px; /* Spacing between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
+}
+
+.education-list li {
+    text-align: center;
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    max-width: 300px; /* Limit width of each box */
+}
+
+.education-list strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #023261;
+    margin-bottom: 5px;
+}
+
+.education-list p {
+    margin: 0;
+    font-size: 1rem;
+    color: #000000;
+}
+
+/* Hover Effect */
+.education-list li:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.bounce {
+    animation: bounceIn 0.6s ease-out;
+}
