@@ -1,5 +1,5 @@
 // Your existing dynamic content code
-fetch('C:/Users/91981/Desktop/sayaji-website/data.json')
+fetch('portfolio-testing/data.json')
     .then(response => response.json())
     .then(data => {
         // Update Summary Section
