@@ -96,7 +96,7 @@ html, body {
 header {
     position: relative;
     height: 470px;
-    background: url('C:/Users/91981/Desktop/sayaji-website/static/images/header-background.jpeg') no-repeat center center;
+    background: url('static/images/header-background.jpeg') no-repeat center center;
     background-size: cover;
     color: #003366; /* Darker text for contrast */
     text-align: center;
