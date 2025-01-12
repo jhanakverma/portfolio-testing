@@ -25,7 +25,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('static/images/header-background.jpeg') no-repeat center center/cover;
+    background: url('./images/background.jpeg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,7 @@ html, body {
 header {
     position: relative;
     height: 470px;
-    background: url('static/images/header-background.jpeg') no-repeat center center;
+    background: url('./images/background.jpeg') no-repeat center center;
     background-size: cover;
     color: #003366; /* Darker text for contrast */
     text-align: center;
