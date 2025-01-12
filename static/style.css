@@ -371,6 +371,13 @@ button:hover, .btn:hover {
     background: linear-gradient(to bottom, #ffffff, #f1f1f1);
 }
 
+@media (max-width: 768px) {
+  .experience-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 15px; /* Adjust gap between boxes */
+  }
+}
+
 .experience-box {
     background: #ffffff;
     border: 2px solid #003366;
