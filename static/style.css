@@ -560,6 +560,26 @@ button:hover, .btn:hover {
     color: #003366;
 }
 
+@media (max-width: 768px) {
+  .contact-container {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center-align items */
+      gap: 10px; /* Add spacing between items */
+  }
+
+  .contact-container div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px; /* Space between icon and text */
+  }
+
+  .contact-container i {
+      font-size: 1.2rem; /* Adjust icon size */
+  }
+}
+
 .heading-container {
     display: inline-flex; /* Align items horizontally */
     justify-content: center; /* Center the content */
