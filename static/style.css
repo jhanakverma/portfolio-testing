@@ -309,6 +309,13 @@ footer p {
       text-align: center; /* Center-align content */
   }
 
+@media (max-width: 768px) {
+  .about-text p {
+      text-align: justify; /* Justify text for better readability */
+      padding: 0 10px; /* Add padding for spacing on smaller screens */
+  }
+}
+
   .about-photo {
       margin: 20px 0; /* Add spacing between text and photo */
       width: 100%; /* Full-width for smaller screens */
