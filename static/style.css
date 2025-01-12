@@ -303,6 +303,23 @@ footer p {
     font-family: 'Merriweather', serif;
 }
 
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column; /* Stack text and image vertically */
+      text-align: center; /* Center-align content */
+  }
+
+  .about-photo {
+      margin: 20px 0; /* Add spacing between text and photo */
+      width: 100%; /* Full-width for smaller screens */
+  }
+
+  .about-text {
+      margin: 0 auto; /* Center-align text block */
+      padding: 0 10px; /* Add padding for better readability */
+  }
+}
+
 button, .btn {
     background-color: #0078d7;
     color: white;
