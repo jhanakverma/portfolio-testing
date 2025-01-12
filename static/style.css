@@ -577,7 +577,7 @@ button:hover, .btn:hover {
   .contact-container {
       display: flex;
       flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center-align items */
+      align-items: center; /* Center-align each item */
       gap: 10px; /* Add spacing between items */
   }
 
@@ -586,10 +586,12 @@ button:hover, .btn:hover {
       align-items: center;
       justify-content: center;
       gap: 10px; /* Space between icon and text */
+      width: 100%; /* Ensure full-width alignment */
+      text-align: center; /* Center the text */
   }
 
   .contact-container i {
-      font-size: 1.2rem; /* Adjust icon size */
+      font-size: 1.2rem; /* Adjust icon size for mobile */
   }
 }
 
