@@ -380,8 +380,14 @@ button:hover, .btn:hover {
 
 @media (max-width: 768px) {
   .experience-container {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns */
-      gap: 15px; /* Adjust gap between boxes */
+      grid-template-columns: repeat(2, 1fr); /* Ensure two boxes per row */
+      gap: 20px; /* Add gap between rows and columns */
+      margin: 0 10px; /* Add some padding around the container */
+  }
+
+  .experience-box {
+      margin: 0; /* Ensure no additional margin that might cause overlap */
+      padding: 15px; /* Adjust padding inside each box */
   }
 }
 
