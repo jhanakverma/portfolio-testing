@@ -118,6 +118,14 @@ header p {
     animation: fadeInSubtitle 4s ease-in-out;/* Links the fade-in animation */
 }
 
+@media (max-width: 768px) {
+  header p {
+    font-size: 1rem; /* Smaller font size */
+    padding: 20px 10px; /* Add padding to keep the text clear of the navigation bar */
+    line-height: 1.4; /* Adjust line height for better readability */
+  }
+}
+
 @keyframes fadeInSubtitle {
     0% {
         opacity: 0;/* The text starts fully transparent */
@@ -150,6 +158,35 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none; /* Hide the navigation links initially */
+        flex-direction: column; /* Stack links vertically */
+        background: #0d2b58; /* Background for the dropdown */
+        position: absolute;
+        top: 50px; /* Below the navigation bar */
+        width: 100%; /* Full width */
+        padding: 10px 0;
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger menu */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .menu-toggle.active + .nav-list {
+        display: flex; /* Show links when the menu is toggled */
+    }
 }
 
 /* Section Styling */
