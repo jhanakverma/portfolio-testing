@@ -577,3 +577,14 @@ button:hover, .btn:hover {
 .bounce {
     animation: bounceIn 0.6s ease-out;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .experience-box {
+    width: 100%; /* Stack boxes vertically */
+  }
+}
+
