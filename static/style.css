@@ -357,6 +357,36 @@ a:hover {
     text-decoration: underline; /* Add underline on hover */
 }
 
+
+/* Resume section within the about section */
+.resume-section {
+    margin-top: 20px; /* Adds spacing from the above paragraph */
+    text-align: center; /* Center aligns the text and button */
+}
+
+.resume-section p {
+    font-size: 1rem;
+    margin-bottom: 10px; /* Adds spacing between text and button */
+    color: #333; /* Standard text color */
+}
+
+.resume-section .btn {
+    background-color: #023261; /* Button background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.resume-section .btn:hover {
+    transform: scale(1.1); /* Enlarges the button slightly */
+    background-color: #73a3d3; /* Darkens the button */
+}
+
 button, .btn {
     background-color: #0078d7;
     color: white;
