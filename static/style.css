@@ -345,6 +345,18 @@ footer p {
   }
 }
 
+a {
+    color: #244c69; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-style: italic; /* Make the link bold */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #73a3d3; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
 button, .btn {
     background-color: #0078d7;
     color: white;
