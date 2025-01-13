@@ -96,7 +96,7 @@ html, body {
 header {
     position: relative;
     height: auto;
-    min height: 300px;
+    min-height: 300px;
     background: url('./images/background.jpeg') no-repeat center center;
     background-size: cover;
     color: #003366; /* Darker text for contrast */
