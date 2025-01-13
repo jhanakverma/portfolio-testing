@@ -118,6 +118,15 @@ header p {
     animation: fadeInSubtitle 4s ease-in-out;/* Links the fade-in animation */
 }
 
+header {
+    overflow: hidden; /* Prevents content from spilling out */
+    word-wrap: break-word; /* Wraps long text to the next line */
+}
+
+header h1, header p {
+    white-space: normal; /* Allows wrapping of text */
+}
+
 @media (max-width: 375px) {
     header h1 {
         font-size: 2.5rem; /* Make the main heading smaller */
