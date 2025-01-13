@@ -118,12 +118,20 @@ header p {
     animation: fadeInSubtitle 4s ease-in-out;/* Links the fade-in animation */
 }
 
-@media (max-width: 768px) {
-  header p {
-    font-size: 1rem; /* Smaller font size */
-    padding: 20px 10px; /* Add padding to keep the text clear of the navigation bar */
-    line-height: 1.4; /* Adjust line height for better readability */
-  }
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 2.5rem; /* Make the main heading smaller */
+    }
+
+    header p {
+        font-size: 1rem; /* Adjust subtitle font size */
+        margin: 5px 0; /* Adjust spacing */
+    }
+    
+    header {
+        padding: 20px 10px; /* Reduce padding to make room */
+        height: auto; /* Let the height adjust dynamically */
+    }
 }
 
 @keyframes fadeInSubtitle {
