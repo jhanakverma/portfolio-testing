@@ -453,29 +453,6 @@ button:hover, .btn:hover {
     justify-content: start; /* Align content to the top */
 }
 
-/* Ensures all logos are in a uniform container */
-.logo-container {
-    height: 80px; /* Adjust based on your design */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px; /* Space between logo and company name */
-    overflow: hidden; /* Prevent logos from exceeding container boundaries */
-}
-
-/* Styles for the logo */
-.company-logo {
-    max-height: 100%; /* Scale logo to fit within container */
-    max-width: 100%; /* Prevents distortion */
-    object-fit: contain; /* Maintains aspect ratio */
-}
-
-@media (max-width: 768px) {
-    .logo-container {
-        height: 50px; /* Smaller height for smaller screens */
-    }
-}
-
 .company-name {
     word-wrap: break-word;
     margin: 0;
