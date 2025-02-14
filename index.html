@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sayaji Hande - About</title>
-    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+    <title>Dr. Sayaji Hande</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -68,7 +68,7 @@
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Waterfall&display=swap" rel="stylesheet">
 </head>
@@ -97,165 +97,328 @@
             <h2>About</h2>
             <div class="about-container">
                 <div class="about-text">        
-            <p>An established leader in Artificial Intelligence, Machine Learning, and Statistics, with over 31 years of expertise in the technology field focusing on innovations and product development leveraging AI and Statistical Machine Learning. I have worked in leadership roles across leading multinational technology companies and in globally renowned universities as a faculty member. I have over 20 patents and publications to my name in the applications of statistical machine learning across digital industries. I have received multiple global recognitions for my work, especially my seminal work in computational statistics by providing <a href="https://en.wikipedia.org/wiki/Bapat%E2%80%93Beg_theorem" target="_blank">the proof for Bapat-Beg theorem</a>. The Govt. of India appointed me as one of the board members for the school of Computer Science & Mathematics for the Central University of the Indian State of Rajasthan and I have led the establishment of three global companies in India - Flagstone India, marketRx India (acquired by Cognizant Technologies) and Parsec Software.</p>
-                <!-- Add this for the resume -->
+            <p>An established leader in Artificial Intelligence, Machine Learning, and Statistics, with over 31 years of expertise in the technology field focusing on innovations and product development leveraging AI and Statistical Machine Learning. I have worked in leadership roles across leading multinational technology companies and in globally renowned universities as a faculty member.</p>
+            <p>I have over 20 patents and publications to my name in the applications of statistical machine learning across digital industries. I have received multiple global recognitions for my work, especially my seminal work in computational statistics by providing <a href="https://en.wikipedia.org/wiki/Bapat%E2%80%93Beg_theorem" target="_blank">the proof for Bapat-Beg theorem</a>.</p> 
+            <p>The Govt. of India appointed me as one of the board members for the school of Computer Science & Mathematics for the Central University of the Indian State of Rajasthan and I have led the establishment of three global companies in India - Flagstone India, marketRx India (acquired by Cognizant Technologies) and Parsec Software.</p>
             <div class="resume-section">
                 <p>To know more about me check my detailed resume for more insights into my professional journey.</p>
-                <a href="static/sir resume.pdf" class="btn" target="_blank">Resume</a>
+                <a href="sir resume.pdf" class="btn" target="_blank">Resume</a>
             </div>
-                </div>
+        </div>
         <div class="about-photo">
-            <img src="static\images\sir photo.jpeg" alt="Dr. Sayaji Hande">
+            <img src="images\sir photo.jpeg" alt="Dr. Sayaji Hande">
         </div>
     </div>
         </section>
         
         <section id="experience" class="section">
             <h2>Visionary Pursuits</h2>
-            <div class="experience-container">
-                <div class="experience-box" data-id="1">
-                    <h3 class="company-name">I Am Still Alive</h3>
-                    <p class="location">India</p>
-                    <p class="designation"><strong><em>Director, India</em></strong></p>
-                    <p class="time-period"><em>(Since Jan’24)</em></p>    
-                </div>
 
-                <div class="experience-box" data-id="2">
-                    <h3 class="company-name">Shivaji University</h3>
-                    <p class="location">Kolhapur, India</p>
-                    <p class="designation"><strong><em>Adjunct Professor, Computer Science & Statistics</em></strong></p>
-                    <p class="time-period"><em>(Since Jun’23)</em></p>    
-                </div>
-                
-                <div class="experience-box" data-id="3">
-                    <h3 class="company-name">Codvo.AI</h3>
-                    <p class="location">Pune, India</p>
-                    <p class="designation"><strong><em>Industry & Research Advisor – AI and Machine Learning</em></strong></p>
-                    <p class="time-period"><em>(Since Apr’23)</em></p>
-                </div>
+                <!-- Major Fortune Companies -->
+        <h3><em>Major Fortune Companies I Worked For</em></h3>
+        <div class="company-row">
+            <!-- Box for Each Company -->
+            <div class="experience-box" onclick="openModal(1)">
+                <img src="images/GE.jpg" alt="GE Capital Logo" class="company-logo">
+                <div class="box-content">
+                <p class="company-name">GE Capital</p>
+                <p class="location">India</p>
+                <p class="designation"><strong><em>Assistant Vice President, Analytics Center of Excellence</em></strong></p>
+                <p class="time-period"><em>(2001-2003)</em></p>
+            </div>
+        </div>
+            <div class="experience-box" onclick="openModal(2)">
+                <img src="images/IBM.png" alt="IBM Research Logo" class="company-logo">
+                <div class="box-content">
+                <p class="company-name">IBM Research</p>
+                <p class="location">India</p>
+                <p class="designation"><strong><em>Research Scientist, Computer Science & Data Science</em></strong></p>
+                <p class="time-period"><em>(2004-2005)</em></p>
+            </div>
+        </div>
+            <div class="experience-box" onclick="openModal(3)">
+                <img src="images/adobe logo.jpg" alt="Adobe Research Logo" class="company-logo">
+                <div class="box-content">
+                <p class="company-name">Adobe Research</p>
+                <p class="location">India</p>
+                <p class="designation"><strong><em>Senior Research Scientist</em></strong></p>
+                <p class="time-period"><em>(2012-2014)</em></p>
+            </div>
+        </div>
+    </div>
 
-                <div class="experience-box" data-id="4">
-                    <h3 class="company-name">ICFAI Tech School</h3>
-                    <p class="location">Hyderabad, India</p>
-                    <p class="designation"><strong><em>Professor, Computer Science and Data Science</em></strong></p> 
-                    <p class="time-period"><em>(2018-2021)</em></p>
-                </div>
+    <!-- Major Startups -->
+        <h3><em>Major Startups I Worked For</em></h3>
+        <div class="company-row">
+            <!--Box 1-->
+        <div class="experience-box" onclick="openModal(4)">
+            <img src="images/company logo.jpeg" alt="I am Still Alive logo" class="company-logo">
+            <div class="box-content">
+            <p class="company-name">I am Still Alive</p>
+            <p class="location">India</p>
+            <p class="designation"><strong><em>Director, India</em></strong></p>
+            <p class="time-period"><em>(Since Jan'24)</em></p>
+        </div>
+    </div>
+        <div class="experience-box" onclick="openModal(5)">
+            <img src="images/market rx.png" alt="MarketRx logo" class="company-logo">
+            <div class="box-content">
+            <p class="company-name">MarketRx</p>
+            <p class="location">India</p>
+            <p class="designation"><strong><em>Vice President, Advanced Analytics</em></strong></p>
+            <p class="time-period"><em>(2003-2004)</em></p>
+        </div>
+    </div>
+        <div class="experience-box" onclick="openModal(6)">
+            <img src="images/flagstone.jpg" alt="flagstone logo" class="company-logo">
+            <div class="box-content">
+            <p class="company-name">Flagstone Research</p>
+            <p class="location">India</p>
+            <p class="designation"><strong><em>Senior Vice President, Analytics</em></strong></p>
+            <p class="time-period"><em>(2005-2007)</em></p>
+        </div>
+    </div>
+        <div class="experience-box" onclick="openModal(7)">
+            <img src="images/rms.jpg" alt="rms logo" class="company-logo">
+            <div class="box-content">
+            <p class="company-name">Risk Management Company</p>
+            <p class="location">Newark, California</p>
+            <p class="designation"><strong><em>Senior Software Engineer</em></strong></p>
+            <p class="time-period"><em>(1994)</em></p>   
+        </div>
+    </div>
+    </div>
 
-                <div class="experience-box" data-id="5">
-                    <h3 class="company-name">Adobe Systems</h3>
-                    <p class="location">Bangalore, India</p>
-                    <p class="designation"><strong><em>Senior Research Scientist</em></strong></p>
-                    <p class="time-period"><em>(2012-2014)</em></p>
-                </div>
-                
-                <div class="experience-box" data-id="6">
-                    <h3 class="company-name">Alcatel-Lucent</h3>
-                    <p class="location">India</p>
-                    <p class="designation"><strong><em>Data Scientist</em></strong></p>
-                    <p class="time-period"><em>(2010-2012)</em></p>
-                </div>
+    <!-- Academia -->
+        <h3><em>Academia</em></h3>
+        <div class="company-row">
+            <div class="experience-box" onclick="openModal(8)">
+                <img src="images/isi.png" alt="isi logo" class="company-logo">
+                <div class="box-content">
+                <p class="company-name">Indian Statistical Institute </p>
+                <p class="location">Delhi, India</p>
+                <p class="designation"><strong><em>Visiting Scientist</em></strong></p>
+                <p class="time-period"><em>(1992-1994)</em></p>
+            </div>
+        </div>
+            <div class="experience-box" onclick="openModal(9)">
+                <img src="images/iift.png" alt="iift logo" class="company-logo">
+                <div class="box-content">
+                <p class="company-name">Indian Institue of Foreign Trade</p>
+                <p class="location">Delhi, India</p>
+                <p class="designation"><strong><em>Visiting Faculty, Financial Engineering</em></strong></p>
+                <P class="time-period"><em>(2005-2006)</em></P>
+            </div>
+        </div> 
+    </div>
 
-                <div class="experience-box" data-id="7">
-                    <h3 class="company-name">Bell Labs</h3>
-                    <p class="location">USA</p>
-                    <p class="designation"><strong><em>Research Scientist</em></strong></p>
-                    <p class="time-period"><em>(2005-2010)</em></p>
-                </div>
-
-                <div class="experience-box" data-id="8">
-                    <h3 class="company-name">Purdue University</h3>
-                    <p class="location">USA</p>
-                    <p class="designation"><strong><em>Postdoctoral Researcher, Statistics</em></strong></p>
-                    <p class="time-period"><em>(1992-1994)</em></p>
+    <!-- Academia Adjunct Professor/Board Member -->
+        <h3><em>Academia Adjunct Professor</em></h3>
+        <div class="company-row">
+            <div class="experience-box" onclick="openModal(10)">
+                <img src="images/shivaji uni photo.jpg" alt="shivaji uni logo" class="company-logo">
+                <div class="box-content">
+                <p class="company-name">Shivaji University</p>
+                <p class="location">Kolhapur, India</p>
+                <P class="designation"><strong><em>Adjunct Professor, Computer Science & Statistics</em></strong></P>
+                <P class="time-period"><em>(Since Jun'23)</em></P>
+            </div>
+        </div>
+            <div class="experience-box" onclick="openModal(11)">
+                <img src="images/CUR.png" alt="CUR logo" class="company-logo">
+                <div class="box-content">
+                <p class="company-name">Central University of Rajasthan</p>
+                <p class="location">Rajasthan, India</p>
+                <p class="designation"><strong><em>Board Member</em></strong></p>
+                <p class="time-period"><em>(2009-2014)</em></p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(1)">&times;</span>
+            <h3>GE Capital</h3>
+            <p class="time-period">(2001-2003)</p>
+                    <ul>
+                        <li>Led global statistical modeling and technology product teams for PLCC (Private Label Credit Cards)  to build products for
+                            various digital campaigns with appropriate test and control.</li>
+                        <li>Developed PLCC Promotions – Risk Response Matrix and advanced data mart management applications.</li>
+                        <li>Filed two patents on fintech innovations in statistical modeling and machine learning.</li>
+                    </ul>
                 </div>
             </div>
-            
-            <div id="experience-modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div class="modal-details">
-                    <div class="details">
-                        <ul>
-                            <li>Led strategic initiatives to optimize company operations, driving substantial organizational impact and growth.</li>
-                            <li>Managed and coordinated cross-functional teams to ensure seamless alignment with corporate objectives and enhanced collaboration.</li>
-                            <li>Established and nurtured partnerships with key stakeholders to improve service delivery, focusing on innovative support mechanisms for cancer patients.</li>
-                        </ul>
-                    
-                    <div class="details">
-                        <ul>
-                            <li>Delivered comprehensive courses on advanced Artificial Intelligence and Machine Learning, fostering a deep understanding of cutting-edge concepts and applications.</li>
-                            <li>Conducted innovative research in statistical machine learning, contributing to advancements in the field through impactful findings.</li>
-                            <li>Authored a foundational book on AI and ML mathematics, bridging theoretical insights with practical implementation for aspiring professionals and researchers.</li>
-                        </ul>
-                    
-                    <div class="details">
-                        <ul>
-                            <li>Provided strategic guidance on AI product development and research methodologies, ensuring alignment with industry standards and innovation goals.</li>
-                            <li>Spearheaded the implementation of AI-powered solutions, driving digital transformation and operational excellence across diverse industries.</li>
-                            <li>Collaborated with cross-functional teams to translate cutting-edge AI research into scalable, real-world applications.</li>
-                        </ul>
-                    
-                    <div class="details">
-                        <ul>
-                            <li>Conducted in-depth research in Artificial Intelligence and Machine Learning, with a focus on innovative methodologies and practical applications.</li>
-                            <li>Designed and delivered a comprehensive curriculum, teaching courses from foundational principles to advanced AI and ML techniques.</li>
-                            <li>Authored and published influential research on Network Flow Optimization using Monte Carlo Simulation.</li>
-                        </ul>
-                    
-                    <div class="details">
-                        <ul>
-                            <li>Spearheaded cutting-edge research on Artificial Intelligence technologies tailored for Adobe Experience Cloud, driving innovation in customer experience solutions.</li>
-                            <li>Co-invented three patents, revolutionizing digital marketing strategies with AI-powered advancements.</li>
-                            <li>Collaborated with multidisciplinary teams to integrate AI technologies, enhancing product scalability and market impact.</li>
-                        </ul>
-                    
-                    <div class="details">
-                        <ul>
-                            <li>Designed and implemented predictive analytics solutions to optimize telecom network operations and performance.</li>
-                            <li>Utilized advanced statistical modeling techniques to identify and resolve network inefficiencies, boosting reliability and service quality.</li>
-                            <li>Collaborated with cross-functional teams to integrate analytics-driven insights into decision-making processes.</li>
-                        </ul>
-                    
-                    <div class="details">
-                        <ul>
-                            <li>Conducted pioneering research on advanced machine learning algorithms, driving innovation in AI technologies.</li>
-                            <li>Authored influential studies on pattern recognition and data analysis, contributing to cutting-edge academic and industrial applications.</li>
-                            <li>Collaborated with interdisciplinary teams to explore the intersection of machine learning and real-world problem-solving.</li>
-                        </ul>
-                    
-                    <div class="details">
-                        <ul>
-                            <li>Specialized in statistical modeling techniques, focusing on large-scale data analysis to address complex research problems.</li>
-                            <li>Developed innovative regression methodologies, advancing statistical practices in data-driven research.</li>
-                            <li>Collaborated with academic and industry experts to apply statistical insights to impactful projects.</li>
-                        </ul>
-                    </div>
+           
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(2)">&times;</span>
+            <h3>IBM Research</h3>
+            <p class="time-period">(2004-2005)</p>
+                    <ul>
+                        <li>Led research and development teams on data analytics products and process development for wildfire management and budget optimization analytics products.</li>
+                        <li>Developed one of the world’s first dynamic pricing techniques for railway ticketing systems.</li>
+                        <li>Collaborated on government projects for integrating analytics with response infrastructure.</li>
+                    </ul>
                 </div>
-            </div>        
-        </section>
+            </div>
+
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(3)">&times;</span>
+            <h3>Adobe Research</h3>
+            <p class="time-period">(2012-2012)</p>
+                    <ul>
+                        <li>Led Adobe's research teams to build innovative AI-based technologies for Experience Cloud.</li>
+                        <li>Co-invented three patents in digital marketing, integrated into Adobe Experience Cloud products.</li>
+                        <li>Developed statistical models to optimize experimentation in the digital marketing industry.</li>
+                    </ul>
+                </div>
+    </div>
+
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(4)">&times;</span>
+            <h3>I am Still Alive</h3>
+            <p class="time-period">(Since jan'24)</p>
+                    <ul>
+                        <li>Led strategic initiatives to optimize company operations, driving substantial organizational impact and growth.</li>
+                        <li>Managed and coordinated cross-functional teams to ensure seamless alignment with corporate objectives and enhanced collaboration.</li>
+                        <li>Established and nurtured partnerships with key stakeholders to improve service delivery, focusing on innovative support mechanisms for cancer patients.</li>
+                    </ul>
+        </div>
+    </div>
+
+    <div id="modal-5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(5)">&times;</span>
+            <h3>MarketRx (Acquired by Cognizant Technologies)</h3>
+            <p class="time-period">(2003-2004)</p>
+                    <ul>
+                        <li>Pioneered the establishment of India operations for a multinational Pharma-tech company, culminating in its acquisition by Cognizant for USD 170 million.</li>
+                        <li>Led the development and deployment of cutting-edge pharma-tech products, including solutions for sales lifecycle management and B2B e-commerce.</li>
+                        <li>Drove strategic initiatives to enhance technology adoption, optimizing product efficiency and market reach within the pharmaceutical sector.</li>
+                    </ul>
+        </div>
+    </div>
+
+    <div id="modal-6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(6)">&times;</span>
+            <h3>Flagstone Research</h3>
+            <p class="time-period">(2005-2007)</p>
+                    <ul>
+                        <li>Set up and managed the Indian operations for Flagstone Capital, a leading global fintech company.</li>
+                        <li>Directed the development and launch of software products for automating insurance profiling, asset management, and liability management.</li>
+                        <li>Led innovations in catastrophic reinsurance through advanced software solutions.</li>
+                    </ul>
+        </div>
+    </div>
+
+    <div id="modal-7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(7)">&times;</span>
+            <h3>Risk Management Company</h3>
+            <p class="time-period">(1994)</p>
+                    <ul>
+                        <li>Developed advanced catastrophe risk models to assess financial impacts of natural disasters such as earthquakes, hurricanes, and floods, enabling data-driven decision-making.</li>
+                        <li>Designed predictive analytics tools for insurance and reinsurance companies to improve risk assessment and underwriting decisions.</li>
+                        <li>Collaborated on early-stage development of RMS, contributing to its growth in risk assessment solutions.</li>
+                    </ul>       
+        </div>
+    </div>
+    
+    <div id="modal-8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(8)">&times;</span>
+            <h3>Indian Statistical Institue</h3>
+            <p class="time-period">(1992-1994)</p>
+                    <ul>
+                        <li>Taught advanced statistical courses at the Indian Statistical Institute, recognized as an Institute of National Importance by the Indian Government.</li>
+                        <li>Conducted research on statistical machine learning methods and their real-world applications.</li>
+                        <li>Contributed to the academic and research excellence of one of India's most prestigious institutions.</li>
+                    </ul>
+        </div>
+    </div>
+
+    <div id="modal-9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(9)">&times;</span>
+            <h3>Indian Institue of Foreign Trade</h3>
+            <p class="time-period">(2005-2006)</p>
+                    <ul>
+                        <li>Conducted advanced courses in Financial Engineering, equipping students with knowledge of modern financial tools and strategies.</li>
+                        <li>Integrated real-world case studies to enhance understanding of financial analytics and quantitative methods.</li>
+                        <li>Mentored aspiring finance professionals, fostering analytical and problem-solving skills essential for global trade markets.</li>
+                    </ul>
+        </div>
+    </div>
+
+    <div id="modal-10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(10)">&times;</span>
+            <h3>Shivaji University</h3>
+            <p class="time-period">(Since Jun'23)</p>
+                    <ul>
+                        <li>Delivered comprehensive courses on advanced Artificial Intelligence and Machine Learning, fostering a deep understanding of cutting-edge concepts and applications.</li>
+                        <li>Conducted innovative research in statistical machine learning, contributing to advancements in the field through impactful findings.</li>
+                        <li>Authored a foundational book on AI and ML mathematics, bridging theoretical insights with practical implementation for aspiring professionals and researchers.</li>
+                    </ul>
+                </div>
+    </div>
+
+    <div id="modal-11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(11)">&times;</span>
+            <h3>Central University of Rajasthan</h3>
+            <p class="time-period">(2009-2014)</p>
+                <ul>
+                    <li>Appointed by the Government of India as a board member to lead the School of Computer Science & Mathematics at Central University of Rajasthan.</li>
+                    <li>Developed strategic plans in collaboration with university leadership to advance education and research.</li>
+                    <li>Formulated and implemented policies for governance, focusing on curriculum design, faculty appointments, and budget planning.</li>
+                </ul>
+            </div>
+            </div>
+</section>
 
         <section id="publications" class="section">
             <div class="heading-container">
                 <h2>Recent Innovations</h2>
-                <img src="static/images/innovation.gif" alt="Innovation GIF" class="innovation-gif">
+                <img src="images/innovation.gif" alt="Innovation GIF" class="innovation-gif">
             </div>
             <ul>
-                <li><a href="https://drive.google.com/file/d/1l5ooaWa-ZJw7zW6w0ANGnVUz4_OaTRLv/view?usp=drive_link" target="_blank">An End-to-End approach for Network Flows: Monte Carlo Simulation Methodology (IISA 2017 / IEEE Xplore 2019)</a></li>
-                <li><a href="https://drive.google.com/file/d/1Y00_zhXDpBcy-zwTX_KMHiGLsntM237J/view?usp=drive_link" target="_blank">Selection of K-Seeds that give combined Maximum ‘Value’ (US Patent # 9524527, Granted – Dec 2016)</a></li>
-                <li><a href="https://drive.google.com/file/d/1zIQY46a095B2dMyx5DKw5WGC7CO3MLFo/view?usp=drive_link" target="_blank">Naked Truths: Detecting Behavioural Anomalies & Patterns of Individuals & to Normalize the Overall Results (US Patent # 10318971, Granted – June 2019)</a></li>
-                <li><a href="https://drive.google.com/file/d/18LC45LBsrt9nc6V753t6plBV3DImY3ut/view?usp=drive_link" target="_blank">Modelling Content Spread in Social Media (US Patent Publication # 20150081609, March 2015)</a></li>
-                <li><a href="https://drive.google.com/file/d/1AgDS7eHv9QvBfLqml21kunqckYI7Ivjt/view?usp=drive_link" target="_blank">Design of a Study: Market Share & its flow for Telecom Service Providers (US Patent Publication # 20130035980, Feb 2013)</a></li>
-                <li><a href="https://drive.google.com/file/d/1erRltfRWWY8O02uV-ar1uvW6i6DsRtTP/view?usp=drive_link" target="_blank">An Effective Method Of Measuring Wireless Consumer Experience (US Patent Publication # 20120201150, Aug 2012)</a></li>
-                <li><a href="https://drive.google.com/file/d/1TpFMn7LUppUGaYZUCFnvvAj04ZMe8TxQ/view?usp=drive_link" target="_blank">Gold Price Volatility in Recessionary Period</a></li>
-                <li><a href="https://drive.google.com/file/d/1Q1HJFwWIOLclMdevBYd2fughmKo0O0KR/view?usp=drive_link" target="_blank">Mean Reversion in Capital Markets</a></li>
-                <li><a href="https://drive.google.com/file/d/1tql4YHpN3fh0g-KGfQRqnxYHI5HQ5x4J/view?usp=drive_link" target="_blank">Statical Proof of Matrix Result</a></li>
+                <li><a href="Patent1.pdf" target="_blank">The Long & Short of AI Regulation: Economic and Political Weekly, Volume 59, Issue No. 16, on April 20, 2024</a></li>
+                <li><a href="Patent 2.pdf" target="_blank">An End-to-End approach for Network Flows: Monte Carlo Simulation Methodology (IISA 2017 / IEEE Xplore 2019)</a></li>
+                <li><a href="Patent 3.pdf" target="_blank">Selection of K-Seeds that give combined Maximum ‘Value’ (US Patent # 9524527, Granted – Dec 2016)</a></li>
+                <li><a href="Patent 4.pdf" target="_blank">Naked Truths: Detecting Behavioural Anomalies & Patterns of Individuals & to Normalize the Overall Results (US Patent # 10318971, Granted – June 2019)</a></li>
+                <li><a href="Patent 5.pdf" target="_blank">Modelling Content Spread in Social Media (US Patent Publication # 20150081609, March 2015)</a></li>
+                <li><a href="Patent 6.pdf" target="_blank">Design of a Study: Market Share & its flow for Telecom Service Providers (US Patent Publication # 20130035980, Feb 2013)</a></li>
+                <li><a href="Patent 7.pdf" target="_blank">An Effective Method Of Measuring Wireless Consumer Experience (US Patent Publication # 20120201150, Aug 2012)</a></li>
+                <li><a href="Patent 8.pdf" target="_blank">Gold Price Volatility in Recessionary Period</a></li>
+                <li><a href="Patent 9.pdf" target="_blank">Mean Reversion in Capital Markets</a></li>
+                <li><a href="Patent 10.pdf" target="_blank">Statical Proof of Matrix Result</a></li>
              </ul>
+        </section>
+        
+        <section id="my-work" class="section">
+            <h2>Unveiling Knowledge</h2>
+            <p class="sub-heading"><em>Explore My Latest Contribution</em></p>
+            <div class="work-content">
+                <p class="work-description">
+                    Dive into the mathematical depths behind Artificial Intelligence and Machine Learning. 
+                    This work bridges theory with real-world applications, serving as a guide for enthusiasts 
+                    and professionals alike.
+                </p>
+                <div class="book-item">
+                        <img src="images/book-cover.jpg" alt="Book Cover" class="book-cover">
+                    <p class="book-title"><em>Mathematics Behind Artificial Intelligence & Machine Learning</em></p>
+                </div>
+            </div>
         </section>
 
         <section id="education" class="section">
             <div class="heading-container">
                 <h2>Education</h2>
-                <img src="static/images/education.gif" alt="Education GIF" class="education-gif">
+                <img src="images/education.gif" alt="Education GIF" class="education-gif">
             </div>
             <ul class="education-list">
                 <li>
@@ -266,26 +429,36 @@
                     <strong>Indian Statistical Institute, Calcutta</strong>
                     <p>M. Stat., First Class (1986)</p>
                 </li>
+                <li>
+                    <strong>Tuck School of Business, New Hampshire</strong>
+                    <p>Diploma in Portfolio Management, (2007)</p>
+                </li>
             </ul>
         </section>        
         
         <section id="contact" class="section">
             <h2>Contact</h2>
             <div class="contact-container">
-            <ul class="contact-list">
-                <li>
-                    <img src="static/images/mail.gif" alt="Mail Icon" class="contact-gif">
-                    <a href="mailto:sayaji_hande@iamstillalive.com">sayaji_hande@iamstillalive.com</a>
-                </li>
-                <li>
-                    <img src="static/images/telephone.gif" alt="Phone Icon" class="contact-gif">
-                    +91 9910510076
-                </li>
-                <li>
-                    <img src="static/images/linkedin.gif" alt="LinkedIn Icon" class="contact-gif">
-                    <a href="https://www.linkedin.com/in/sayajihande" target="_blank">LinkedIn Profile</a>
-                </li>
-            </ul>
+                <ul class="contact-list">
+                    <!-- Email Section -->
+                    <li class="email-section">
+                        <img src="images/mail.gif" alt="Mail Icon" class="contact-gif">
+                        <div class="email-list">
+                            <a href="mailto:sayaji_hande@iamstillalive.com">sayaji_hande@iamstillalive.com</a>
+                            <a href="mailto:sayaji.hande@gmail.com">sayaji.hande@gmail.com</a>
+                        </div>
+                    </li>
+                    <!-- Phone Section -->
+                    <li>
+                        <img src="images/telephone.gif" alt="Phone Icon" class="contact-gif">
+                        +91 9910510076
+                    </li>
+                    <!-- LinkedIn Section -->
+                    <li>
+                        <img src="images/linkedin.gif" alt="LinkedIn Icon" class="contact-gif">
+                        <a href="https://www.linkedin.com/in/sayajihande" target="_blank">LinkedIn Profile</a>
+                    </li>
+                </ul>
             </div>
         </section>
         
@@ -294,7 +467,7 @@
     <footer>
         <p>&copy; 2024 Dr. Sayaji Hande. All Rights Reserved.</p>
     </footer>
-    <script src="static/script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -304,8 +477,29 @@
     <script>
     gsap.from("header h1", { duration: 1, y: -50, opacity: 0 });
     </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach((collapsible) => {
+            collapsible.addEventListener("click", function () {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
+
+
+
+
+
 
 
 
