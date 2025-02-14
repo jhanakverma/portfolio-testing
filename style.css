@@ -25,7 +25,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('background.jpeg') no-repeat center center/cover;
+    background: url('images/background.jpeg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +98,7 @@ header {
     position: relative;
     height: auto;
     min-height: 300px;
-    background: url('background.jpeg') no-repeat center center;
+    background: url('images/background.jpeg') no-repeat center center;
     background-size: cover;
     color: #003366; /* Darker text for contrast */
     text-align: center;
@@ -445,14 +445,16 @@ button:hover, .btn:hover {
     background: #fff;
     border: 2px solid #003366;
     border-radius: 5%;
-    width: 30%; /* Adjust for uniform size */
-    height: 250px;
+    width: 90%; /* Adjust for uniform size */
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+    margin: 10px auto;
+    overflow: hidden;
 }
 
 .company-logo {
@@ -494,6 +496,7 @@ button:hover, .btn:hover {
 .experience-box p {
     margin: 10px 0;/* Add consistent spacing */
     text-align: center; /* Center-align all text */
+    word-wrap: break-word;
 }
 
 .experience-box .company-name {
@@ -579,8 +582,9 @@ button:hover, .btn:hover {
     }
 
     .experience-box {
-        width: 45%; /* Reduce size to fit more boxes in small screens */
+        width: 50%; /* Reduce size to fit more boxes in small screens */
         margin-bottom: 20px; /* Add space between rows when wrapped */
+        max-width: 100%;
     }
 
     .company-logo {
@@ -604,12 +608,6 @@ button:hover, .btn:hover {
     gap: 40px; /* Add spacing between items */
     flex-wrap: wrap; /* Ensure items wrap if they don't fit */
     padding: 20px;
-}
-
-.email-list {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    margin-left: 10px; /* Add spacing from the icon */
 }
 
 .contact-list {
@@ -779,6 +777,7 @@ button:hover, .btn:hover {
         gap: 10px; /* Reduce spacing for compact view */
     }
 }
+
 
 /* My Work Section */
 #my-work {
