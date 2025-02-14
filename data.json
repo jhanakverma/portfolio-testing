@@ -1,0 +1,25 @@
+{
+    "summary": "An established leader in Artificial Intelligence, Machine Learning, and Statistics...",
+    "experience": [
+        {
+            "title": "Shivaji University",
+            "role": "Adjunct Professor",
+            "since": "Since Jun’23"
+        },
+        {
+            "title": "Codvo.AI",
+            "role": "Industry & Research Advisor",
+            "since": "Since Apr’23"
+        }
+    ],
+    "publications": [
+        {
+            "title": "Predicting Spread of Content Across Social Networks",
+            "link": "#"
+        },
+        {
+            "title": "Normalizing User Responses to an Event",
+            "link": "#"
+        }
+    ]
+}
