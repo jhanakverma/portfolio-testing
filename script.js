@@ -74,7 +74,7 @@ fetch('./data.json')
         const sections = document.querySelectorAll('.section, .experience-box');
         sections.forEach((section) => observer.observe(section));
     });
-
+    
 
     // Function to open modal
 function openModal(modalId) {
@@ -107,5 +107,6 @@ window.addEventListener("keydown", function (event) {
         });
     }
 });
+
 
 
