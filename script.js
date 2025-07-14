@@ -6,9 +6,9 @@ fetch('./data.json')
         document.querySelector('#summary p').innerText = data.summary;
 
         // Update Experience Section
-        const expContainer = document.querySelector('#experience .experience-grid');
+        const expContainer = document.querySelector('#journey .journey-grid');
         expContainer.innerHTML = '';
-        data.experience.forEach(exp => {
+        data.journey.forEach(exp => {
             expContainer.innerHTML += `
                 <div>
                     <h3>${exp.title}</h3>
@@ -71,7 +71,7 @@ fetch('./data.json')
         );
     
         // Target all sections or boxes you want to animate
-        const sections = document.querySelectorAll('.section, .experience-box');
+        const sections = document.querySelectorAll('.section, .journey-box');
         sections.forEach((section) => observer.observe(section));
     });
     
