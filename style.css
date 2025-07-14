@@ -458,7 +458,7 @@ button:hover, .btn:hover {
     transform: translateY(0);
 }
 
-#experience {
+#journey {
     background-color: #f9f9f9; /* Light gray background */
     padding: 40px;
     margin: 20px auto;
@@ -467,7 +467,7 @@ button:hover, .btn:hover {
     text-align: center;
 }
 
-#experience h2 {
+#journey h2 {
     color: #023261;
     font-size: 2rem;
     margin-bottom: 20px;
@@ -483,11 +483,11 @@ button:hover, .btn:hover {
     flex-wrap: nowrap; /* Allow wrapping for smaller screens */
 }
 
-.experience-category {
+.journey-category {
     margin-bottom: 40px;/* Space between sections */
 }
 
-.experience h3 {
+.journey h3 {
     color: #023261;
     font-size: 1.7rem;
     margin-bottom: 5px;
@@ -495,7 +495,7 @@ button:hover, .btn:hover {
 }
 
 /* Experience Box */
-.experience-box {
+.journey-box {
     background: #fff;
     border: 2px solid #003366;
     border-radius: 5%;
@@ -547,38 +547,38 @@ button:hover, .btn:hover {
     color: #666; /* Optional: Make it visually distinct */
 }
 
-.experience-box p {
+.journey-box p {
     margin: 10px 0;/* Add consistent spacing */
     text-align: center; /* Center-align all text */
     word-wrap: break-word;
 }
 
-.experience-box .company-name {
+.journey-box .company-name {
     font-size: 1.2rem; /* Company name size */
     font-weight: bold;
     margin: 0; /* Space around */
 }
 
-.experience-box .location {
+.journey-box .location {
     font-size: 1rem; /* Location size */
     color: #666; /* Subtle color for location */
     margin: 5px 0 10px 0; /* Space around */
 }
 
-.experience-box .designation {
+.journey-box .designation {
     background-color: #f0f8ff; /* Light blue background for designation */
     font-size: 1rem; /* Adjust as needed */
     font-weight: bold;
     margin: 0; /* Add spacing if needed */
 }
 
-.experience-box .time-period {
+.journey-box .time-period {
     font-size: 0.9rem; /* Slightly smaller font */
     color: #666; /* Subtle text color for time */
     margin: 0; /* Add spacing if needed */
 }
 
-.experience-box:hover {
+.journey-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -635,7 +635,7 @@ button:hover, .btn:hover {
         justify-content: center; /* Center-align on wrap */
     }
 
-    .experience-box {
+    .journey-box {
         width: 50%; /* Reduce size to fit more boxes in small screens */
         margin-bottom: 20px; /* Add space between rows when wrapped */
         max-width: 100%;
