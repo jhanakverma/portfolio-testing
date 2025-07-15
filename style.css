@@ -25,7 +25,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('/images/background.jpeg') no-repeat center center/cover;
+    background: url('images/background.jpeg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,60 +354,6 @@ a:hover {
     text-align: center; /* Center aligns the text and button */
 }
 
-
-/* Buy now button*/
-.buy-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color:#023261;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 6px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.buy-button:hover {
-    background-color:#19875b;
-    transform: translateY(-2px);
-}
-
-  .buy-now-dropdown {
-    margin-top: 15px;
-    font-family: sans-serif;
-  }
-
-  .purchase-options {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .purchase-options a {
-    background-color: #f1f1f1;
-    padding: 2px;
-    border-radius: 1px;
-    text-decoration: none;
-    color: #333;
-    border: 1px solid #ccc;
-    transition: background-color 0.2s ease;
-  }
-
-  .purchase-options a:hover {
-    background-color: #e0e0e0;
-  }
-
-  details[open] .buy-button {
-    background-color: #0056b3;
-  }
-
-
-
-
 .resume-section p {
     font-size: 1rem;
     margin-bottom: 10px; /* Adds spacing between text and button */
@@ -458,6 +404,213 @@ button:hover, .btn:hover {
     transform: translateY(0);
 }
 
+#inked h2 {
+    color: #023261;
+    font-family: 'Castoro Titling', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.book-item {
+    flex: 1; /* Ensure it takes equal space */
+    text-align: center; /* Center align the book */
+}
+
+.book-cover {
+    width: 100%; /* Ensure the image fits the container */
+    max-width: 200px; /* Limit the size of the image */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Highlight on hover */
+}
+
+.book-title {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #003366; /* Dark blue text */
+    text-align: center;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color:#023261;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+    background-color:#19875b;
+    transform: translateY(-2px);
+}
+
+  .buy-now-dropdown {
+    margin-top: 15px;
+    font-family: sans-serif;
+  }
+
+  .purchase-options {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .purchase-options a {
+    background-color: #f1f1f1;
+    padding: 2px;
+    border-radius: 1px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    transition: background-color 0.2s ease;
+  }
+
+  .purchase-options a:hover {
+    background-color: #e0e0e0;
+  }
+
+  details[open] .buy-button {
+    background-color: #0056b3;
+  }
+
+
+/* My Work Section */
+#my-work {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.sectionbg {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #ffffff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#IASA {
+    background: beige;
+    background-size: cover;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    padding: 40px 40px;
+    text-align: center;
+    margin: 20px auto;
+    display: inline
+}
+
+/* Text Container */
+#text {
+    width: 50%;  /* Takes half of the section */
+}
+
+/* Image Container */
+#image {
+    width: 50%;  /* Takes half of the section */
+    display: flex;
+    justify-content: center; /* Centers the image inside its container */
+}
+
+/* Styling for the image */
+.brochure {
+    width: 100%;  /* Image takes 80% of the section width */
+    max-width: 800px;  /* Ensures the image doesn’t get too large */
+    height: auto;  /* Maintains aspect ratio */
+    display: block; /* Removes extra spacing */
+    margin: 20px auto; /* Centers the image */
+    border-radius: 10px; /* Adds soft corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+.brochure:hover {
+    transform: scale(3.0);  /* Enlarges the image by 20% */
+    transition: 0.3s ease-in-out;  /* Smooth animation */
+}
+
+#my-work h2 {
+    font-size: 2rem;
+    color: #023261;
+    margin-bottom: 0;
+    font-family: 'Castoro Titling', serif;
+    text-transform: uppercase; /* All caps */
+    letter-spacing: 2px; /* Add spacing for aesthetic */
+}
+
+.sub-heading {
+    font-size: 1.7rem;
+    color: #023261; /* Subtle gray for subheading */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+.work-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* gap: 20px; */
+    max-width: 800px; /* Limit the width for better layout */
+    margin: 0 auto; /* Center align the content */
+    margin-top: -10px; /* Moves the entire text block up */
+}
+
+.work-description {
+    font-size: 1rem;
+    color: #000000;
+    font-family: 'Merriweather', serif;
+    line-height: 2;
+    flex: 1; /* Ensure it takes equal space */
+    text-align: left; /* Align text to the left */
+}
+
+.work-description p {
+    margin-top: -20px; /* Adjust value as needed */
+}
+
+audio {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px; /* Restrict width */
+    display: flex;
+}
+
+.brochure {
+    width: 100%; /* Ensure the image fits the container */
+    max-width: 200px; /* Limit the size of the image */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    .work-content {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .work-description {
+        text-align: center; /* Center align text for smaller screens */
+    }
+}
+
 #journey {
     background-color: #f9f9f9; /* Light gray background */
     padding: 40px;
@@ -472,6 +625,7 @@ button:hover, .btn:hover {
     font-size: 2rem;
     margin-bottom: 20px;
     font-family: 'Castoro Titling', static;
+    text-align: center;
 }
 
 .company-row {
@@ -832,158 +986,3 @@ button:hover, .btn:hover {
     }
 }
 
-
-/* My Work Section */
-#my-work {
-    background-color: #f9f9f9; /* Light gray background */
-    padding: 40px 20px;
-    text-align: center;
-    margin: 20px auto;
-}
-
-/* ---------------------------------------------------------------------------- */
-
-
-.sectionbg {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    background: #ffffff; /* White background for contrast */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-#IASA {
-    background: beige;
-    background-size: cover;
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    padding: 40px 40px;
-    text-align: center;
-    margin: 20px auto;
-    display: inline
-}
-
-/* Text Container */
-#text {
-    width: 50%;  /* Takes half of the section */
-}
-
-/* Image Container */
-#image {
-    width: 50%;  /* Takes half of the section */
-    display: flex;
-    justify-content: center; /* Centers the image inside its container */
-}
-
-/* Styling for the image */
-.brochure {
-    width: 100%;  /* Image takes 80% of the section width */
-    max-width: 800px;  /* Ensures the image doesn’t get too large */
-    height: auto;  /* Maintains aspect ratio */
-    display: block; /* Removes extra spacing */
-    margin: 20px auto; /* Centers the image */
-    border-radius: 10px; /* Adds soft corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-}
-.brochure:hover {
-    transform: scale(3.0);  /* Enlarges the image by 20% */
-    transition: 0.3s ease-in-out;  /* Smooth animation */
-}
-
-/* ------------------------------------------------------------------------------ */
-
-#my-work h2 {
-    font-size: 2rem;
-    color: #023261;
-    margin-bottom: 0;
-    font-family: 'Castoro Titling', serif;
-    text-transform: uppercase; /* All caps */
-    letter-spacing: 2px; /* Add spacing for aesthetic */
-}
-
-.sub-heading {
-    font-size: 1.7rem;
-    color: #023261; /* Subtle gray for subheading */
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-family: 'Merriweather', serif;
-}
-
-.work-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* gap: 20px; */
-    max-width: 800px; /* Limit the width for better layout */
-    margin: 0 auto; /* Center align the content */
-    margin-top: -10px; /* Moves the entire text block up */
-}
-
-.work-description {
-    font-size: 1rem;
-    color: #000000;
-    font-family: 'Merriweather', serif;
-    line-height: 2;
-    flex: 1; /* Ensure it takes equal space */
-    text-align: left; /* Align text to the left */
-}
-
-.work-description p {
-    margin-top: -20px; /* Adjust value as needed */
-}
-
-.book-item {
-    flex: 1; /* Ensure it takes equal space */
-    text-align: center; /* Center align the book */
-}
-
-.book-cover {
-    width: 100%; /* Ensure the image fits the container */
-    max-width: 200px; /* Limit the size of the image */
-    height: auto;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-audio {
-    display: block;
-    margin-top: 10px;
-    width: 100%;
-    max-width: 300px; /* Restrict width */
-    display: flex;
-}
-
-.brochure {
-    width: 100%; /* Ensure the image fits the container */
-    max-width: 200px; /* Limit the size of the image */
-    height: auto;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.book-cover:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Highlight on hover */
-}
-
-.book-title {
-    margin-top: 5px;
-    font-size: 1rem;
-    color: #003366; /* Dark blue text */
-    text-align: center;
-}
-
-/* Responsive Styling for Small Screens */
-@media (max-width: 768px) {
-    .work-content {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center align items */
-    }
-
-    .work-description {
-        text-align: center; /* Center align text for smaller screens */
-    }
-}
