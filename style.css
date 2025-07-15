@@ -426,7 +426,6 @@ button:hover, .btn:hover {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
     max-width: 900px;
     margin: 0 auto;
 }
