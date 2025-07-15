@@ -421,7 +421,6 @@ button:hover, .btn:hover {
     margin-bottom: 20px;
 }
 
-
 .book-item {
     flex: 1; /* Ensure it takes equal space */
     text-align: center; /* Center align the book */
