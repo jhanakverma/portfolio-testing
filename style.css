@@ -412,6 +412,16 @@ button:hover, .btn:hover {
     text-align: center;
 }
 
+.sub-heading {
+    text-align: center;
+    font-size: 1.2rem; /* Optional: adjust size */
+    color: #023261;     /* Optional: match theme */
+    font-family: 'Merriweather', serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
 .book-item {
     flex: 1; /* Ensure it takes equal space */
     text-align: center; /* Center align the book */
