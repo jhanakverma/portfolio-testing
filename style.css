@@ -418,6 +418,7 @@ button:hover, .btn:hover {
     font-family: 'Merriweather', serif;
     margin-top: 0;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .work-content {
@@ -433,9 +434,13 @@ button:hover, .btn:hover {
 /* Left: Book description */
 .book-description {
     flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
     text-align: left;
     font-family: 'Merriweather', serif;
     line-height: 1.7;
+    padding: 20px; /* Optional: adds spacing inside */
 }
 
 .book-item {
@@ -452,26 +457,37 @@ button:hover, .btn:hover {
     margin-bottom: 20px;
 }
 
-/* Center buy button under paragraph */
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #023261;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+    background-color: #19875b;
+    transform: translateY(-2px);
+}
+
 .buy-button-container {
     display: flex;
     justify-content: flex-start; /* aligns within left side */
     margin-top: 10px;
 }
 
+
 .buy-now-dropdown {
-    font-family: 'Merriweather', serif;
-}
-
-.buy-button:hover {
-    background-color:#19875b;
-    transform: translateY(-2px);
-}
-
-  .buy-now-dropdown {
     margin-top: 15px;
-    font-family: sans-serif;
-  }
+    font-family: 'Merriweather', sans-serif;
+}
 
   .purchase-options {
     margin-top: 10px;
@@ -497,12 +513,6 @@ button:hover, .btn:hover {
   details[open] .buy-button {
     background-color: #0056b3;
   }
-
-/* Right: Book image + title */
-.book-item {
-    flex: 1;
-    text-align: center;
-}
 
 .book-cover {
     width: 100%;
