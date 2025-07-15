@@ -412,7 +412,7 @@ button:hover, .btn:hover {
     text-align: center;
 }
 
-#inked .sub-heading {
+.sub-heading {
     font-size: 1.2rem; /* Optional: adjust size */
     color: #023261;     /* Optional: match theme */
     font-family: 'Merriweather', serif;
@@ -420,9 +420,9 @@ button:hover, .btn:hover {
     margin-bottom: 20px;
 }
 
-#inked .work-content {
+.work-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
@@ -432,10 +432,18 @@ button:hover, .btn:hover {
 
 /* Left: Book description */
 .book-description {
-    flex: 1;
+    flex: 0 0 40%;
     text-align: left;
     font-family: 'Merriweather', serif;
     line-height: 1.7;
+}
+
+.book-item {
+    flex: 0 0 60%; /* Fixed 60% width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .work-title {
