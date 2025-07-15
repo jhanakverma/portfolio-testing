@@ -412,7 +412,7 @@ button:hover, .btn:hover {
     text-align: center;
 }
 
-.sub-heading {
+#inked .sub-heading {
     font-size: 1.2rem; /* Optional: adjust size */
     color: #023261;     /* Optional: match theme */
     font-family: 'Merriweather', serif;
@@ -420,44 +420,39 @@ button:hover, .btn:hover {
     margin-bottom: 20px;
 }
 
-.book-item {
-    flex: 1; /* Ensure it takes equal space */
-    text-align: center; /* Center align the book */
+#inked .work-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.book-cover {
-    width: 100%; /* Ensure the image fits the container */
-    max-width: 200px; /* Limit the size of the image */
-    height: auto;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Left: Book description */
+.book-description {
+    flex: 1;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    line-height: 1.7;
 }
 
-.book-cover:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Highlight on hover */
-}
-
-.book-title {
-    margin-top: 5px;
+.work-title {
     font-size: 1rem;
-    color: #003366; /* Dark blue text */
-    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.buy-button {
-    display: inline-block;
-    padding: 10px 20px;
+/* Center buy button under paragraph */
+.buy-button-container {
+    display: flex;
+    justify-content: flex-start; /* aligns within left side */
     margin-top: 10px;
-    background-color:#023261;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 6px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-now-dropdown {
+    font-family: 'Merriweather', serif;
 }
 
 .buy-button:hover {
@@ -495,6 +490,48 @@ button:hover, .btn:hover {
     background-color: #0056b3;
   }
 
+/* Right: Book image + title */
+.book-item {
+    flex: 1;
+    text-align: center;
+}
+
+.book-cover {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.05);
+}
+
+.book-title {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #003366;
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #inked .work-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-description, .book-item {
+        text-align: center;
+    }
+
+    .buy-button-container {
+        justify-content: center;
+    }
+}
 
 /* My Work Section */
 #my-work {
