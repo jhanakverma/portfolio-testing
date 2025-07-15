@@ -413,7 +413,6 @@ button:hover, .btn:hover {
 }
 
 .sub-heading {
-    text-align: center;
     font-size: 1.2rem; /* Optional: adjust size */
     color: #023261;     /* Optional: match theme */
     font-family: 'Merriweather', serif;
