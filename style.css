@@ -425,14 +425,15 @@ button:hover, .btn:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: mowrap;
+    gap: 40px;
     max-width: 900px;
     margin: 0 auto;
 }
 
 /* Left: Book description */
 .book-description {
-    flex: 0 0 38%;
+    flex: 0 0 40%;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center the content */
@@ -443,7 +444,7 @@ button:hover, .btn:hover {
 }
 
 .book-item {
-    flex: 0 0 58%; /* Fixed 60% width */
+    flex: 0 0 60%; /* Fixed 60% width */
     display: flex;
     flex-direction: column;
     align-items: center;
