@@ -359,7 +359,7 @@ a:hover {
 /* Resume section within the about section */
 .resume-section {
     margin-top: 20px; /* Adds spacing from the above paragraph */
-    text-align: center; /* Center aligns the text and button */
+    text-align: left; /* Center aligns the text and button */
 }
 
 .resume-section p {
