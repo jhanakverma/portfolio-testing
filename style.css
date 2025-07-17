@@ -404,28 +404,11 @@ button:hover, .btn:hover {
     transform: translateY(0);
 }
 
-.about-audio-section {
-  margin-top: 40px;
-  padding: 20px;
-  text-align: center;
-  background: linear-gradient(to right, #f9f9f9, #ffffff);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .about-audio-section p {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: normal;
   color: #2c2c2c;
   margin-bottom: 12px;
-}
-
-.about-audio-section audio {
-  width: 100%;
-  max-width: 400px;
-  outline: none;
-  border-radius: 8px;
 }
 
 #inked h2 {
