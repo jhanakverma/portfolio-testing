@@ -359,13 +359,14 @@ a:hover {
 /* Resume section within the about section */
 .resume-section {
     margin-top: 20px; /* Adds spacing from the above paragraph */
-    text-align: left; /* Center aligns the text and button */
+    text-align: center; /* Center aligns the text and button */
 }
 
 .resume-section p {
     font-size: 1rem;
     margin-bottom: 10px; /* Adds spacing between text and button */
     color: #333; /* Standard text color */
+    text-align: left;
 }
 
 .resume-section .btn {
