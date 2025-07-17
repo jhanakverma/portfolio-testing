@@ -293,15 +293,22 @@ footer p {
     margin-right: 20px; /* Add some space between text and image */
 }
 
-.about-photo {
-    flex-shrink: 0;
-    width: 300px; /* Set the image width */
-    height: auto;
+.about-photo-float {
+    float: right;
+    width: 260px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
-.about-photo img {
-    width: 100%;  /* Make the image fit within its container */
-    border-radius: 10px; /* Optional: Add rounded corners to the image */
+.about-photo-float img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    text-align: justify;
 }
 
 #about p {
