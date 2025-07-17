@@ -286,6 +286,7 @@ footer p {
     display: flex;
     align-items: center;  /* Align text and image vertically */
     justify-content: space-between; /* Space between the text and image */
+    text-align: left;
 }
 
 .about-text {
@@ -295,7 +296,7 @@ footer p {
 
 .about-photo-float {
     float: right;
-    width: 260px;
+    width: 350px;
     margin-left: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
